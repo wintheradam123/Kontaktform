@@ -43,6 +43,73 @@
     <h5>Adresse information</h5>
   </div>
   <div class="adresseform">
-    <form action=""></form>
+    <form #adresseform="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+      <p>
+        <input
+          type="text"
+          [(ngModel)]="useradresse.forNavn"
+          required
+          placeholder="Fornavn"
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          [(ngModel)]="useradresse.efterNavn"
+          required
+          placeholder="Efternavn"
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          [(ngModel)]="useradresse.adresse1"
+          required
+          placeholder="Adresse"
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          [(ngModel)]="useradresse.adresse2"
+          placeholder="Adresse 2"
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          [(ngModel)]="useradresse.land"
+          required
+          placeholder="Land"
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          [(ngModel)]="useradresse.by"
+          required
+          placeholder="By"
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          [(ngModel)]="useradresse.postnummer"
+          required
+          placeholder="Postnummer"
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          [(ngModel)]="useradresse.telefon"
+          required
+          placeholder="Telefon"
+        />
+      </p>
+      <p>
+        <button type="submit" [disabled="!adresseform.valid" ]></button>
+      </p>
+    </form>
   </div>
 </div>
