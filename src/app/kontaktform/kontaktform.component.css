@@ -1,0 +1,12 @@
+.header {
+  justify-content: space-around;
+}
+.cards {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+.card {
+  display: inline-block;
+  justify-content: space-around;
+}
