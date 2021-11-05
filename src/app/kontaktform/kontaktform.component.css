@@ -1,12 +1,14 @@
 .header {
   justify-content: space-around;
 }
-.cards {
+/*
+
+.row {
   display: flex;
   margin-top: 50px;
   justify-content: space-evenly;
 }
-.card {
+ .card {
   display: inline-block;
   justify-content: space-around;
-}
+} */
