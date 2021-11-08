@@ -1,7 +1,12 @@
 .body {
   width: 65%;
+  margin-top: 5%;
   float: left;
   margin-left: 2%;
+}
+.body h4 {
+  text-decoration: underline;
+  margin-bottom: 2%;
 }
 .formdiv {
   width: 65%;
@@ -14,4 +19,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-right: 2%;
+}
+.leveringLabel {
+  font-size: large;
 }

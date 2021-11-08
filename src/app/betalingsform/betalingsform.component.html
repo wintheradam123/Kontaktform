@@ -47,17 +47,17 @@
         <input
           type="text"
           class="form-control"
-          id="forNavn"
+          id="firstname"
           placeholder="Indtast fornavn"
-          formControlName="forNavn"
+          formControlName="firstname"
           required
         />
         <input
           type="text"
           class="form-control"
-          id="efterNavn"
+          id="lastname"
           placeholder="Indtast efternavn"
-          formControlName="efterNavn"
+          formControlName="lastname"
           required
         />
       </div>
@@ -66,9 +66,9 @@
         <input
           type="text"
           class="form-control"
-          id="adresse1"
+          id="address"
           placeholder="Indtast adresse"
-          formControlName="adresse1"
+          formControlName="address"
           required
         />
       </div>
@@ -77,9 +77,9 @@
         <input
           type="text"
           class="form-control"
-          id="adresse2"
+          id="address"
           placeholder="Indtast adresse 2"
-          formControlName="adresse2"
+          formControlName="address2"
         />
       </div>
 
@@ -87,17 +87,17 @@
         <input
           type="text"
           class="form-control"
-          id="land"
+          id="country"
           placeholder="Indtast land"
-          formControlName="land"
+          formControlName="country"
           required
         />
         <input
           type="text"
           class="form-control"
-          id="by"
+          id="city"
           placeholder="Indtast by"
-          formControlName="by"
+          formControlName="city"
           required
         />
       </div>
@@ -106,19 +106,65 @@
         <input
           type="text"
           class="form-control"
-          id="postnummer"
+          id="zip"
           placeholder="Indtast postnummer"
-          formControlName="postnummer"
+          formControlName="zip"
           required
         />
         <input
           type="tel"
+          pattern="[0-9]{8}"
           class="form-control"
-          id="telefon"
+          id="phone"
           placeholder="Indtast telefonnummer"
-          formControlName="telefon"
+          formControlName="phone"
           required
         />
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  formControlName="levering"
+                  id="levering"
+                  name="levering"
+                  value="free"
+                />
+                <label class="leveringLabel" for="gratisLevering"
+                  >Gratis levering</label
+                >
+                <br />
+                <p>Mellem 2-5 arbejdsdage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  formControlName="levering"
+                  id="levering"
+                  name="levering"
+                  value="next day"
+                />
+                <label class="leveringLabel" for="naesteDag"
+                  >Levering næste dag</label
+                >
+                <br />
+                <p>24 timer fra ordre</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <button class="btn btn-primary" type="submit">Næste</button>

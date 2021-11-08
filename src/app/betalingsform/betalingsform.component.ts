@@ -14,14 +14,15 @@ export class BetalingsformComponent {
     private formBuilder : FormBuilder
   ) {
     this.formGroup = this.formBuilder.group({
-      forNavn: '',
-      efterNavn: '',
-      adresse1: '',
-      adresse2: '',
-      land: '',
-      by: '',
-      postnummer: '',
-      telefon: '',
+      firstname: '',
+      lastname: '',
+      address: '',
+      address2: '',
+      country: '',
+      city: '',
+      zip: '',
+      phone: '',
+      levering: '',
     });
   }
 
