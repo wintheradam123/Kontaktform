@@ -120,7 +120,7 @@
         />
         <input
           type="tel"
-          pattern="[0-9]{8}"
+          pattern="((\+|00)?[1-9]{2}|0)[1-9]([0-9]){5}"
           oninvalid="this.setCustomValidity('Dansk telefonnummer uden +45')"
           oninput="this.setCustomValidity('')"
           class="form-control"
