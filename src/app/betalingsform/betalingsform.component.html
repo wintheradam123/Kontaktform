@@ -109,6 +109,9 @@
       <div class="input-group mb-3">
         <input
           type="text"
+          pattern="[0-9]{4}"
+          oninvalid="this.setCustomValidity('Dansk postnummer')"
+          oninput="this.setCustomValidity('')"
           class="form-control"
           id="zip"
           placeholder="Indtast postnummer"
@@ -118,6 +121,8 @@
         <input
           type="tel"
           pattern="[0-9]{8}"
+          oninvalid="this.setCustomValidity('Dansk telefonnummer uden +45')"
+          oninput="this.setCustomValidity('')"
           class="form-control"
           id="phone"
           placeholder="Indtast telefonnummer"
