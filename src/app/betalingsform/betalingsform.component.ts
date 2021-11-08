@@ -22,7 +22,7 @@ export class BetalingsformComponent {
       city: '',
       zip: '',
       phone: '',
-      levering: '',
+      delivery: '',
     });
   }
 

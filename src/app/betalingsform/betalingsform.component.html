@@ -11,7 +11,6 @@
     crossorigin="anonymous"
   ></script>
 </head>
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,8 +40,13 @@
 
 <div class="body">
   <h4>{{ title }}</h4>
+  <hr class="solid" />
   <div class="formdiv">
-    <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+    <form
+      ngNativeValidate
+      [formGroup]="formGroup"
+      (ngSubmit)="onSubmit(formGroup.value)"
+    >
       <div class="input-group mb-3" style="float: left">
         <input
           type="text"
@@ -122,6 +126,8 @@
         />
       </div>
 
+      <hr class="solid-light" />
+
       <div class="row">
         <div class="col-sm-6">
           <div class="card">
@@ -130,14 +136,12 @@
                 <input
                   type="radio"
                   class="form-check-input"
-                  formControlName="levering"
-                  id="levering"
-                  name="levering"
+                  formControlName="delivery"
+                  id="free"
+                  name="delivery"
                   value="free"
                 />
-                <label class="leveringLabel" for="gratisLevering"
-                  >Gratis levering</label
-                >
+                <label class="leveringLabel" for="free">Gratis levering</label>
                 <br />
                 <p>Mellem 2-5 arbejdsdage</p>
               </div>
@@ -151,12 +155,12 @@
                 <input
                   type="radio"
                   class="form-check-input"
-                  formControlName="levering"
-                  id="levering"
-                  name="levering"
+                  formControlName="delivery"
+                  id="nextday"
+                  name="delivery"
                   value="next day"
                 />
-                <label class="leveringLabel" for="naesteDag"
+                <label class="leveringLabel" for="nextday"
                   >Levering næste dag</label
                 >
                 <br />
@@ -166,7 +170,7 @@
           </div>
         </div>
       </div>
-
+      <hr class="solid" />
       <button class="btn btn-primary" type="submit">Næste</button>
       <button class="btn btn-secondary" type="button">Tilbage</button>
     </form>
@@ -175,12 +179,14 @@
 
 <div class="rightview">
   <h4>Kurv</h4>
+  <hr class="solid" />
   <div class="kurvView">
     <div class="kurvItem">
       <img src="" />
       <p class="produktNavn"></p>
       <p class="produktPris"></p>
     </div>
-    <h3 class="total"></h3>
+    <hr class="solid" />
+    <h5 class="total">TOTAL</h5>
   </div>
 </div>
