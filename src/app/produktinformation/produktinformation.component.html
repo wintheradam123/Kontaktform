@@ -78,22 +78,80 @@
     </div>
   </div>
 </div>
-<div class="produkt">
-  <div class="titel">
-    <h4 class="produktnavn">{{ produktnavn }}</h4>
-    <div class="reviews"></div>
-    <div class="prismodel">
-      <div class="pris">{{ pris }}</div>
-      <div class="dropdown">
-        <ng-container #viewcontainer></ng-container>
-        <select name="model" id="model" class="model"></select>
+<div class="body">
+  <div class="produkt">
+    <div class="titel">
+      <h2 class="produktnavn">{{ produktnavn }}</h2>
+      <div class="reviews">
+        <p>5 stjerner</p>
+      </div>
+      <hr class="solid" />
+      <div class="prismodel">
+        <div class="pris">
+          <h3>{{ pris }}.-</h3>
+        </div>
+        <div class="dropdown">
+          <ng-container #viewcontainer></ng-container>
+          <select name="model" id="model" class="form-select"></select>
+        </div>
+      </div>
+      <br />
+      <div class="beskrivelse">
+        <hr class="solid" />
+        <p>{{ desc }}</p>
+      </div>
+      <div class="purchase">
+        <hr class="solid" />
+        <button id="tilfoejTilKurvbtn" class="btn btn-primary" type="button">
+          Tilføj til kurv
+        </button>
       </div>
     </div>
-    <div class="beskrivelse">
-      <p>{{ desc }}</p>
-    </div>
-    <div class="purchase">
-      <button>Tilføj til kurv</button>
+  </div>
+</div>
+<div class="lignende">
+  <div class="head">
+    <h2 id="headh2">Lignende produkter</h2>
+  </div>
+  <div class="ligprodukter">
+    <div id="prod1">
+      <div class="imgs">
+        <img src="{{ image2 }}" id="img" />
+      </div>
+      <div id="lignendeinfo">
+        <h6>Kontor mus</h6>
+        <div class="anmeldelser">2 stjerner</div>
+        <p>Pris</p>
+      </div>
     </div>
   </div>
+</div>
+<div class="anmeldelser"></div>
+<div id="botnav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Forside</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Se produkter</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Kurv</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>

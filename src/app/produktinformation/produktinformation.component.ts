@@ -6,6 +6,7 @@ import { Produkt } from './Produkt';
   templateUrl: './produktinformation.component.html',
   styleUrls: ['./produktinformation.component.css']
 })
+
 export class ProduktinformationComponent implements OnInit {
   produkt;
   produktnavn;

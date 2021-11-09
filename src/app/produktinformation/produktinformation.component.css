@@ -2,15 +2,62 @@
   padding-bottom: 10px;
 }
 .imgs {
-  width: 45%;
-
+  width: 40%;
+  margin-right: 10%;
   float: left;
+  padding-left: 5%;
 }
 .produkt {
+  width: 50%;
+  float: right;
+  padding-right: 5%;
+}
+
+.pris {
+  width: 45%;
+  float: left;
+}
+.dropdown {
   width: 45%;
   float: right;
 }
+.beskrivelse {
+  margin-top: 20px;
+}
+.purchase {
+  max-width: 15%;
+}
+.solid {
+  border-top: 3px solid #bbb;
+}
+.solid-light {
+  border-top: 2px solid #bbb;
+}
+.form-select {
+  width: fit-content;
+  float: right;
+}
+.lignende {
+  padding-top: 10%;
+  width: 100%;
+  float: left;
+  padding-bottom: 300px;
+  height: 150px;
+}
+#prod1 {
+  width: 25%;
+}
 img {
-  max-width: 100%;
+  width: 50%;
   height: auto;
+  border: 1px solid #bbb;
+}
+#botnav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#lignendeinfo {
+  float: left;
 }
