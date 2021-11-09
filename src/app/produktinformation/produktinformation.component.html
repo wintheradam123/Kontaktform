@@ -5,6 +5,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous"
   />
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -39,26 +40,60 @@
 </nav>
 <hr class="solid" />
 <div class="body">
-  <div class="picture">
-    <img id="img" src="{{ image }}" />
-  </div>
-  <div class="produkt">
-    <div class="titel">
-      <h4 class="produktnavn">{{ produktnavn }}</h4>
-      <div class="reviews"></div>
-      <div class="prismodel">
-        <div class="pris">{{ pris }}</div>
-        <div class="dropdown">
-          <ng-container #viewcontainer></ng-container>
-          <select name="model" id="model" class="model"></select>
+  <div class="imgs">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="img" class="d-block w-100" src="{{ image }}" />
+        </div>
+        <div class="carousel-item">
+          <img id="img" class="d-block w-100" src="{{ image2 }}" />
+        </div>
+        <div class="carousel-item">
+          <img id="img" class="d-block w-100" src="{{ image3 }}" />
         </div>
       </div>
-      <div class="beskrivelse">
-        <p>{{ desc }}</p>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="produkt">
+  <div class="titel">
+    <h4 class="produktnavn">{{ produktnavn }}</h4>
+    <div class="reviews"></div>
+    <div class="prismodel">
+      <div class="pris">{{ pris }}</div>
+      <div class="dropdown">
+        <ng-container #viewcontainer></ng-container>
+        <select name="model" id="model" class="model"></select>
       </div>
-      <div class="purchase">
-        <button>Tilføj til kurv</button>
-      </div>
+    </div>
+    <div class="beskrivelse">
+      <p>{{ desc }}</p>
+    </div>
+    <div class="purchase">
+      <button>Tilføj til kurv</button>
     </div>
   </div>
 </div>
