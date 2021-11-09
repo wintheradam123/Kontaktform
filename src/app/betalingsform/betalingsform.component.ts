@@ -13,7 +13,7 @@ export class BetalingsformComponent {
   constructor(
     private formBuilder : FormBuilder
   ) {
-    this.formGroup = this.formBuilder.group({
+    this.formGroup = this.formBuilder.group({     //Laver et objekt for dataen i formen den får fra html
       firstname: '',
       lastname: '',
       address: '',
@@ -26,7 +26,7 @@ export class BetalingsformComponent {
     });
   }
 
-  onSubmit(formData){
+  onSubmit(formData){     //Når submit knappen bliver trykket i html, kører det nedenstående
     console.log(formData)
   }
 
