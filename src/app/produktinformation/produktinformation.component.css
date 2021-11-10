@@ -1,5 +1,13 @@
-.nav {
-  padding-bottom: 10px;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.body {
+  margin-top: 5%;
 }
 .imgs {
   width: 40%;
