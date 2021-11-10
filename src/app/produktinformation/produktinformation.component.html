@@ -83,7 +83,7 @@
     <div class="titel">
       <h2 class="produktnavn">{{ produktnavn }}</h2>
       <div class="reviews">
-        <p>5 stjerner</p>
+        <p>{{ stjerner }} stjerner</p>
       </div>
       <hr class="solid" />
       <div class="prismodel">
@@ -109,19 +109,40 @@
     </div>
   </div>
 </div>
+<hr class="solid" id="splitHR" />
 <div class="lignende">
   <div class="head">
     <h2 id="headh2">Lignende produkter</h2>
   </div>
   <div class="ligprodukter">
-    <div id="prod1">
-      <div class="imgs">
-        <img src="{{ image2 }}" id="img" />
+    <div id="prod1" class="ligprod">
+      <div class="imgs ligimgs">
+        <img src="{{ ligimage1 }}" />
       </div>
       <div id="lignendeinfo">
-        <h6>Kontor mus</h6>
-        <div class="anmeldelser">2 stjerner</div>
-        <p>Pris</p>
+        <h6>{{ ligproduktnavn1 }}</h6>
+        <div class="anmeldelser">{{ ligstjerner1 }} stjerner</div>
+        <p>{{ ligpris1 }}.-</p>
+      </div>
+    </div>
+    <div id="prod2" class="ligprod">
+      <div class="imgs ligimgs">
+        <img src="{{ ligimage2 }}" />
+      </div>
+      <div class="lignendeinfo">
+        <h6>{{ ligproduktnavn2 }}</h6>
+        <div class="anmeldelser">{{ ligstjerner2 }} stjerner</div>
+        <p>{{ ligpris2 }}.-</p>
+      </div>
+    </div>
+    <div id="prod3" class="ligprod">
+      <div class="imgs ligimgs">
+        <img src="{{ ligimage3 }}" />
+      </div>
+      <div class="lignendeinfo">
+        <h6>{{ ligproduktnavn3 }}</h6>
+        <div class="anmeldelser">{{ ligstjerner3 }} stjerner</div>
+        <p>{{ ligpris3 }}.-</p>
       </div>
     </div>
   </div>
