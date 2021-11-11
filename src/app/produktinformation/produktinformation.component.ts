@@ -66,7 +66,6 @@ export class ProduktinformationComponent implements OnInit {
     this.ligpris3 = LigProdukt3.pris;
     this.ligdesc3 = LigProdukt3.desc;
     this.ligimage3 = LigProdukt3.image;
-
   }
 
   ngOnInit(): void {

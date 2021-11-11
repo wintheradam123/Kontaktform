@@ -20,6 +20,9 @@
   float: right;
   padding-right: 5%;
 }
+.prismodel {
+  padding-bottom: 10px;
+}
 .pris {
   width: 45%;
   float: left;
@@ -49,6 +52,7 @@
   width: 100%;
   float: left;
   padding-bottom: 75px;
+  padding-left: 5%;
 }
 .ligprod {
   width: 33%;
