@@ -45,11 +45,9 @@
   float: right;
 }
 .lignende {
-  padding-top: 10%;
+  padding-top: 50px;
   width: 100%;
   float: left;
-  padding-bottom: 300px;
-  height: 150px;
 }
 .ligprod {
   width: 33%;
@@ -62,9 +60,10 @@ img {
   border: 1px solid #bbb;
 }
 #botnav {
+  overflow: hidden;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  overflow: auto;
 }
 .lignendeinfo {
   float: left;

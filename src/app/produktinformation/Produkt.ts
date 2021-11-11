@@ -7,6 +7,7 @@ export class Produkt {
   static image3='assets/img/rat.jpg';
   static modeller:Array<string> = ['Hvid','Sort','Gennemsigtig'];
   static stjerner = 4;
+  static lagerantal = 150;
 }
 
 export class LigProdukt1 {

@@ -81,8 +81,9 @@
   <div class="produkt">
     <div class="titel">
       <h2 class="produktnavn">{{ produktnavn }}</h2>
-      <div class="reviews">
-        <p>{{ stjerner }} stjerner</p>
+      <div id="reviewlager">
+        <div class="reviews" id="stjerner"></div>
+        <div id="lagerantal">{{ lagerantal }} på lager.</div>
       </div>
       <hr class="solid" />
       <div class="prismodel">
@@ -120,7 +121,7 @@
       </div>
       <div id="lignendeinfo">
         <h6>{{ ligproduktnavn1 }}</h6>
-        <div class="anmeldelser">{{ ligstjerner1 }} stjerner</div>
+        <div class="anmeldelser" id="ligimg1"></div>
         <p>{{ ligpris1 }}.-</p>
       </div>
     </div>
@@ -130,7 +131,7 @@
       </div>
       <div class="lignendeinfo">
         <h6>{{ ligproduktnavn2 }}</h6>
-        <div class="anmeldelser">{{ ligstjerner2 }} stjerner</div>
+        <div class="anmeldelser" id="ligimg2"></div>
         <p>{{ ligpris2 }}.-</p>
       </div>
     </div>
@@ -140,7 +141,7 @@
       </div>
       <div class="lignendeinfo">
         <h6>{{ ligproduktnavn3 }}</h6>
-        <div class="anmeldelser">{{ ligstjerner3 }} stjerner</div>
+        <div class="anmeldelser" id="ligimg3"></div>
         <p>{{ ligpris3 }}.-</p>
       </div>
     </div>
