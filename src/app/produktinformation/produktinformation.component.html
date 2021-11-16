@@ -12,142 +12,7 @@
     crossorigin="anonymous"
   ></script>
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Forside</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Se produkter</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Kontakt</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Kurv</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="body">
-  <div class="imgs">
-    <div
-      id="carouselExampleControls"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img id="img" class="d-block w-100" src="{{ image }}" />
-        </div>
-        <div class="carousel-item">
-          <img id="img" class="d-block w-100" src="{{ image2 }}" />
-        </div>
-        <div class="carousel-item">
-          <img id="img" class="d-block w-100" src="{{ image3 }}" />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</div>
-<div class="body">
-  <div class="produkt">
-    <div class="titel">
-      <h2 class="produktnavn">{{ produktnavn }}</h2>
-      <div id="reviewlager">
-        <div class="reviews" id="stjerner"></div>
-        <div id="lagerantal">{{ lagerantal }} på lager.</div>
-      </div>
-      <hr class="solid" />
-      <div class="prismodel">
-        <div class="pris">
-          <h3>{{ pris }}.-</h3>
-        </div>
-        <div class="dropdown">
-          <ng-container #viewcontainer></ng-container>
-          <select name="model" id="model" class="form-select"></select>
-        </div>
-      </div>
-      <br />
-      <div class="beskrivelse">
-        <hr class="solid" />
-        <p>{{ desc }}</p>
-      </div>
-      <div class="purchase">
-        <hr class="solid" />
-        <button id="tilfoejTilKurvbtn" class="btn btn-primary" type="button">
-          Tilføj til kurv
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-<hr class="solid" id="splitHR" />
-<div class="lignende">
-  <div class="head">
-    <h2 id="headh2">Lignende produkter</h2>
-  </div>
-  <div class="ligprodukter">
-    <div id="prod1" class="ligprod">
-      <div class="imgs ligimgs">
-        <img src="{{ ligimage1 }}" />
-      </div>
-      <div class="lignendeinfo">
-        <h6>{{ ligproduktnavn1 }}</h6>
-        <div class="anmeldelser" id="ligimg1"></div>
-        <p>{{ ligpris1 }}.-</p>
-      </div>
-    </div>
-    <div id="prod2" class="ligprod">
-      <div class="imgs ligimgs">
-        <img src="{{ ligimage2 }}" />
-      </div>
-      <div class="lignendeinfo">
-        <h6>{{ ligproduktnavn2 }}</h6>
-        <div class="anmeldelser" id="ligimg2"></div>
-        <p>{{ ligpris2 }}.-</p>
-      </div>
-    </div>
-    <div id="prod3" class="ligprod">
-      <div class="imgs ligimgs">
-        <img src="{{ ligimage3 }}" />
-      </div>
-      <div class="lignendeinfo">
-        <h6>{{ ligproduktnavn3 }}</h6>
-        <div class="anmeldelser" id="ligimg3"></div>
-        <p>{{ ligpris3 }}.-</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="botnav">
+<div class="wholepage">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -174,4 +39,141 @@
       </div>
     </div>
   </nav>
+  <div class="body">
+    <div class="imgs">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="img" class="d-block w-100" src="{{ image }}" />
+          </div>
+          <div class="carousel-item">
+            <img id="img" class="d-block w-100" src="{{ image2 }}" />
+          </div>
+          <div class="carousel-item">
+            <img id="img" class="d-block w-100" src="{{ image3 }}" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="produkt">
+      <div class="titel">
+        <h2 class="produktnavn">{{ produktnavn }}</h2>
+        <div id="reviewlager">
+          <div class="reviews" id="stjerner"></div>
+          <div id="lagerantal">{{ lagerantal }} på lager.</div>
+        </div>
+        <hr class="solid" />
+        <div class="prismodel">
+          <div class="pris">
+            <h3>{{ pris }}.-</h3>
+          </div>
+          <div class="dropdown">
+            <ng-container #viewcontainer></ng-container>
+            <select name="model" id="model" class="form-select"></select>
+          </div>
+        </div>
+        <br />
+        <div class="beskrivelse">
+          <hr class="solid" />
+          <p>{{ desc }}</p>
+        </div>
+        <div class="purchase">
+          <hr class="solid" />
+          <button id="tilfoejTilKurvbtn" class="btn btn-primary" type="button">
+            Tilføj til kurv
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="solid" id="splitHR" />
+  <div class="lignende">
+    <div class="head">
+      <h2 id="headh2">Lignende produkter</h2>
+    </div>
+    <div class="ligprodukter">
+      <div id="prod1" class="ligprod">
+        <div class="imgs ligimgs">
+          <img src="{{ ligimage1 }}" />
+        </div>
+        <div class="lignendeinfo">
+          <h6>{{ ligproduktnavn1 }}</h6>
+          <div class="anmeldelser" id="ligimg1"></div>
+          <p>{{ ligpris1 }}.-</p>
+        </div>
+      </div>
+      <div id="prod2" class="ligprod">
+        <div class="imgs ligimgs">
+          <img src="{{ ligimage2 }}" />
+        </div>
+        <div class="lignendeinfo">
+          <h6>{{ ligproduktnavn2 }}</h6>
+          <div class="anmeldelser" id="ligimg2"></div>
+          <p>{{ ligpris2 }}.-</p>
+        </div>
+      </div>
+      <div id="prod3" class="ligprod">
+        <div class="imgs ligimgs">
+          <img src="{{ ligimage3 }}" />
+        </div>
+        <div class="lignendeinfo">
+          <h6>{{ ligproduktnavn3 }}</h6>
+          <div class="anmeldelser" id="ligimg3"></div>
+          <p>{{ ligpris3 }}.-</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="botnav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Forside</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Se produkter</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Kontakt</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Kurv</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 </div>

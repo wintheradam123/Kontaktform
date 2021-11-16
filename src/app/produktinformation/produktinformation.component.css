@@ -84,3 +84,6 @@ img {
 .ligimgs {
   margin: 0%;
 }
+.wholepage {
+  min-width: 700px;
+}
