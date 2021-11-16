@@ -37,7 +37,7 @@ export class ProduktinformationComponent implements OnInit {
   ligstjerner3;
 
   constructor () {
-    this.getProdukter(); //Kalder nedenstående metode
+    this.getProdukter();
   }
 
 
@@ -69,6 +69,8 @@ export class ProduktinformationComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    //Nedenstående mapper og indsætter de forskellige modeller fra produkt.ts til html.
+    //Gjorde dette da det var en del af mockups, men det er ikke en del af ER diagrammerne.
     let modelen =
       Produkt.modeller.map(function(element) {
         return '<option value="' + element + '">' + element
@@ -77,6 +79,9 @@ export class ProduktinformationComponent implements OnInit {
 
       getStars();
 
+
+    //Tager fra produkt.ts og ser antal stjerner. For hver stjerne indsætter den et img af en stjerne og giver den styling.
+    //Kunne ikke få styling i .css filen til at virke med disse imgs.
     function getStars() {
       let i = 0;
       let stjerner = Produkt.stjerner;
@@ -87,6 +92,7 @@ export class ProduktinformationComponent implements OnInit {
 
       getLigStars();
 
+      //Gør det samme, bare for de lignende produkter der er nederst på siden.
       function getLigStars() {
         i = 0;
         while (i < LigProdukt1.stjerner) {

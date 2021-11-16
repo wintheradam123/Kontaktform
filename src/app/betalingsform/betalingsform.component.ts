@@ -28,7 +28,8 @@ export class BetalingsformComponent {
     });
   }
 
-  onSubmit(formData){     //Når submit knappen bliver trykket i html, kører det nedenstående
+  //Her er det så at vi skal lave et query til databasen.
+  onSubmit(formData){
     console.log(formData)
   }
 
