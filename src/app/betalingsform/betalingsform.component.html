@@ -52,7 +52,7 @@
           type="text"
           class="form-control"
           id="firstname"
-          placeholder="Indtast fornavn"
+          placeholder="Fornavn"
           formControlName="firstname"
           required
         />
@@ -60,7 +60,7 @@
           type="text"
           class="form-control"
           id="lastname"
-          placeholder="Indtast efternavn"
+          placeholder="Efternavn"
           formControlName="lastname"
           required
         />
@@ -71,7 +71,7 @@
           type="text"
           class="form-control"
           id="address"
-          placeholder="Indtast adresse"
+          placeholder="Adresse"
           formControlName="address"
           required
         />
@@ -82,7 +82,7 @@
           type="text"
           class="form-control"
           id="address"
-          placeholder="Indtast adresse 2"
+          placeholder="Adresse 2"
           formControlName="address2"
         />
       </div>
@@ -92,7 +92,7 @@
           type="text"
           class="form-control"
           id="country"
-          placeholder="Indtast land"
+          placeholder="Land"
           formControlName="country"
           required
         />
@@ -100,7 +100,7 @@
           type="text"
           class="form-control"
           id="city"
-          placeholder="Indtast by"
+          placeholder="By"
           formControlName="city"
           required
         />
@@ -114,18 +114,18 @@
           oninput="this.setCustomValidity('')"
           class="form-control"
           id="zip"
-          placeholder="Indtast postnummer"
+          placeholder="Postnummer"
           formControlName="zip"
           required
         />
         <input
           type="tel"
-          pattern="((\+|00)?[1-9]{2}|0)[1-9]([0-9]){5}"
+          pattern="[0-9]{8}"
           oninvalid="this.setCustomValidity('Indtast dansk telefonnummer, uden +45')"
           oninput="this.setCustomValidity('')"
           class="form-control"
           id="phone"
-          placeholder="Indtast telefonnummer"
+          placeholder="Telefonnummer"
           formControlName="phone"
           required
         />

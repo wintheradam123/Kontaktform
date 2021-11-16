@@ -10,6 +10,8 @@ export class BetalingsformComponent {
   title ='Betalingsinformation';
   formGroup;
 
+
+
   constructor(
     private formBuilder : FormBuilder
   ) {
